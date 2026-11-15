@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicBioMate — Analysis of Market Pain Points</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="tech-page">
+
+    <!-- Header Navigation -->
+   <header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="mypictures/Logo.png" alt="MicBioMate Logo" class="logo-img">
+        </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="index.html#product" class="nav-link" data-i18n="nav_product">Product</a>
+                <a href="index.html#tech" class="nav-link" data-i18n="nav_tech">Technology</a>
+                <a href="mailto:info@micbiomate.com" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+        <div class="header-right">
+            <button class="burger-btn" id="burgerBtn" type="button" aria-label="Menu" aria-expanded="false">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+            <div class="lang-dropdown" id="langDropdown">
+                <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">
+                    <span class="current-lang" id="currentLang">EN</span>
+                    <span class="lang-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+                <div class="lang-menu" id="langMenu">
+                    <button type="button" class="lang-option" data-lang="en">
+                        <span class="lang-flag lang-flag-en" aria-hidden="true"></span>
+                        <span class="lang-name">English</span>
+                    </button>
+                    <button type="button" class="lang-option" data-lang="de">
+                        <span class="lang-flag lang-flag-de" aria-hidden="true"></span>
+                        <span class="lang-name">German</span>
+                    </button>
+                    <button type="button" class="lang-option" data-lang="it">
+                        <span class="lang-flag lang-flag-it" aria-hidden="true"></span>
+                        <span class="lang-name">Italian</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="tech-container">
+        
+        <a href="index.html#home" class="fixed-top-right-arrow" aria-label="Next page">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#18422c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </a>
+
+        <!-- SECTION 1: Pain Points -->
+        <section class="tech-section">
+            <h1 class="tech-main-title" data-i18n="tech_title">ANALYSIS OF MARKET PAIN POINTS</h1>
+            
+            <p class="tech-subtitle" data-i18n="tech_sub">
+                Traditional methods of keratin production are limited by outdated technologies. Here are the key challenges facing modern industries.
+            </p>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card card-green-border">
+                    <div class="card-header">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#18422c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 7L7 17"/>
+                            <path d="M17 11V7H13"/>
+                            <path d="M7 13V17H11"/>
+                        </svg>
+                        <h3 data-i18n="card1_title">ETHICAL INSTABILITY</h3>
+                    </div>
+                    <p data-i18n="card1_desc">100% reliance on animal-derived raw materials (feathers, horns) creates ethical risks and threats to supply stability for premium beauty brands.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card card-green-border">
+                    <div class="card-header">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#18422c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 17L17 7"/>
+                            <path d="M7 7H17V17"/>
+                        </svg>
+                        <h3 data-i18n="card2_title">ECONOMIC INEFFICIENCY</h3>
+                    </div>
+                    <p data-i18n="card2_desc">Traditional acid extraction requires enormous energy consumption, accounting for up to 30% of the final product's production cost.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card card-green-border">
+                    <div class="card-header">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#18422c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12C8 4 16 20 20 12"/>
+                            <path d="M4 12C8 20 16 4 20 12"/>
+                        </svg>
+                        <h3 data-i18n="card3_title">LOST PROTEIN STRUCTURE</h3>
+                    </div>
+                    <p data-i18n="card3_desc">Industrial processing leads to denaturation, transforming valuable raw material into an ineffective hydrolysate with a disrupted tertiary structure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Bioproduction -->
+        <section class="tech-section">
+            <h2 class="tech-section-title" data-i18n="bio_title">BIOPRODUCTION OF KERATIN</h2>
+            <p class="tech-description" data-i18n="bio_desc">
+                The MicBioMate biosynthesis system utilizes a traditional fermentation technology based on the controlled production of human keratins. Our architecture eliminates the use of animal-derived raw materials, replacing them with optimized microbial strains featuring a specific molecular profile.
+            </p>
+
+            <div class="architecture-grid">
+                <div class="arch-block">
+                    <h4 class="block-label" data-i18n="arch_title">BIOSYNTHESIS ARCHITECTURE:</h4>
+                    <div class="arch-image50-wrapper">
+                        <img src="mypictures/image50.png" alt="Biosynthesis Architecture" class="arch-img">
+                    </div>
+                </div>
+
+                <div class="arch-specs">
+                    <h4 class="specs-title" data-i18n="specs_title">Key technical specifications:</h4>
+                    <ul class="specs-list">
+                        <li>
+                            <span class="spec-bullet">•</span>
+                            <span><strong data-i18n="spec1_label">Assembly accuracy:</strong> <span data-i18n="spec1_val">99.5% (secondary structure verification)</span></span>
+                        </li>
+                        <li>
+                            <span class="spec-bullet">•</span>
+                            <span><strong data-i18n="spec2_label">Expression type:</strong> <span data-i18n="spec2_val">Alpha-helical dimer (40-60 kDa)</span></span>
+                        </li>
+                        <li>
+                            <span class="spec-bullet">•</span>
+                            <span><strong data-i18n="spec3_label">Customization:</strong> <span data-i18n="spec3_val">Optimized customized keratins.</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Comparative Specifications -->
+        <section class="tech-section">
+            <h3 class="section-sub-title" data-i18n="table_title">Comparative specifications</h3>
+            
+            <div class="table-container">
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="th_module">Module ID</th>
+                            <th data-i18n="th_nom">Nomenclature</th>
+                            <th data-i18n="th_mass">Mass (kDa)</th>
+                            <th data-i18n="th_app">Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-id">M-001</td>
+                            <td class="col-nom">MicBioKeratin (Std)</td>
+                            <td>40-80</td>
+                            <td data-i18n="td_app_1">Cosmetics industry</td>
+                        </tr>
+                        <tr>
+                            <td class="col-id">M-002</td>
+                            <td class="col-nom">MicBioKeratin MED</td>
+                            <td>40-80</td>
+                            <td data-i18n="td_app_2">Clinical regeneration</td>
+                        </tr>
+                        <tr>
+                            <td class="col-id">M-003</td>
+                            <td class="col-nom">MicBioKeratin MED+</td>
+                            <td>Custom</td>
+                            <td data-i18n="td_app_3">Advanced Therapeutics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Technological Process -->
+        <section class="tech-section">
+            <h3 class="section-sub-title" data-i18n="process_title">Technological process.</h3>
+            
+            <div class="process-steps">
+                <div class="process-block">
+                    <div class="step-num-badge">1</div>
+                    <div class="step-text-badge" data-i18n="step_design">DESIGN</div>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-block">
+                    <div class="step-num-badge">2</div>
+                    <div class="step-text-badge" data-i18n="step_ferm">FERMENTATION</div>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-block">
+                    <div class="step-num-badge">3</div>
+                    <div class="step-text-badge" data-i18n="step_extract">EXTRACTION</div>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-block">
+                    <div class="step-num-badge">4</div>
+                    <div class="step-text-badge" data-i18n="step_purify">PURIFICATION</div>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-block">
+                    <div class="step-num-badge">5</div>
+                    <div class="step-text-badge" data-i18n="step_quality">QUALITY</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

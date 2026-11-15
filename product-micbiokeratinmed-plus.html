@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicBioKeratinMED-PLUS — MicBioMate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="plus-page">
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="mypictures/logo.png" alt="MicBioMate Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="index.html#product" class="nav-link" data-i18n="nav_product">Product</a>
+                <a href="index.html#tech" class="nav-link" data-i18n="nav_tech">Technology</a>
+                <a href="mailto:info@micbiomate.com" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">
+                        <span class="current-lang" id="currentLang">EN</span>
+                        <span class="lang-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <button type="button" class="lang-option" data-lang="en">
+                            <span class="lang-flag lang-flag-en" aria-hidden="true"></span>
+                            <span class="lang-name">English</span>
+                        </button>
+                        <button type="button" class="lang-option" data-lang="de">
+                            <span class="lang-flag lang-flag-de" aria-hidden="true"></span>
+                            <span class="lang-name">German</span>
+                        </button>
+                        <button type="button" class="lang-option" data-lang="it">
+                            <span class="lang-flag lang-flag-it" aria-hidden="true"></span>
+                            <span class="lang-name">Italian</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page-main">
+
+        <section class="prod-hero-section">
+            <div class="container prod-hero-container">
+                <div class="prod-hero-content">
+                    <span class="prod-badge" data-i18n="plus_hero_tag">THIRD-GENERATION KERATIN</span>
+                    <h1 class="prod-title">MicBioKeratinMED-PLUS</h1>
+                    <h3 class="prod-subtitle" data-i18n="plus_hero_sub">FOR PERSONALIZED MEDICINE</h3>
+                    <p class="prod-description" data-i18n="plus_hero_desc">
+                        Customizable protein solutions for regenerative medicine and modern drug delivery systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="partner.html" class="btn btn-secondary" data-i18n="btn_contact_us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="prod-hero-image">
+                    <img src="mypictures/image24.png" alt="MicBioKeratinMED-PLUS Bottle" class="bottle-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="prod-advantages-section">
+            <div class="container">
+                <h3 class="prod-section-title" data-i18n="key_adv_title">KEY ADVANTAGES</h3>
+                <div class="prod-adv-grid">
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image45.png" alt="Maximum concentration" class="card-icon-img">
+                        <h4 data-i18n="plus_adv1_title">Maximum concentration</h4>
+                        <p data-i18n="plus_adv1_desc">Higher active peptide density per dose.</p>
+                    </div>
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image46.png" alt="Targeted customization" class="card-icon-img">
+                        <h4 data-i18n="plus_adv2_title">Targeted customization</h4>
+                        <p data-i18n="plus_adv2_desc">Molecular profile tailored to a specific therapy.</p>
+                    </div>
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image47.png" alt="Peptide enrichment" class="card-icon-img">
+                        <h4 data-i18n="plus_adv3_title">Peptide enrichment</h4>
+                        <p data-i18n="plus_adv3_desc">Bio-peptide complex for deep tissue regeneration.</p>
+                    </div>
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image48.png" alt="Controlled delivery" class="card-icon-img">
+                        <h4 data-i18n="plus_adv4_title">Controlled delivery</h4>
+                        <p data-i18n="plus_adv4_desc">Optimized for targeted drug delivery systems.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="prod-app-section">
+            <div class="container">
+                <h3 class="prod-section-title" data-i18n="fields_title">FIELDS AND APPLICATIONS</h3>
+                <div class="prod-app-grid">
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image33.jpg" alt="Therapeutic ointments and creams">
+                        </div>
+                        <h4 data-i18n="plus_app1_title">ACTIVE INGREDIENT FOR THERAPEUTIC OINTMENTS &amp; CREAMS</h4>
+                        <p data-i18n="plus_app1_desc">High-activity keratin for regenerative ointments, creams, and dermatological formulas.</p>
+                    </div>
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image34.jpg" alt="Post-peel and injection care">
+                        </div>
+                        <h4 data-i18n="plus_app2_title">SOS COMPONENT FOR POST-PEEL &amp; INJECTION CARE</h4>
+                        <p data-i18n="plus_app2_desc">Accelerates recovery of epidermis and dermis after peels, injections, and procedures.</p>
+                    </div>
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image35.jpg" alt="Targeted drug delivery">
+                        </div>
+                        <h4 data-i18n="plus_app3_title">BASE FOR TARGETED DRUG DELIVERY SYSTEMS</h4>
+                        <p data-i18n="plus_app3_desc">A protein carrier platform for person-specific and transdermal drug delivery.</p>
+                    </div>
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image36.jpg" alt="Personalized regenerative treatments">
+                        </div>
+                        <h4 data-i18n="plus_app4_title">PLATFORM FOR PERSONALIZED REGENERATIVE TREATMENTS</h4>
+                        <p data-i18n="plus_app4_desc">Customizable keratin matrices for regenerative medicine and individual protocols.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="prod-why-section">
+            <div class="container text-center">
+                <h2 class="prod-why-title" data-i18n="plus_why_title">Why MicBioKeratinMED-PLUS</h2>
+                <p class="prod-why-text" data-i18n="plus_why_desc">
+                    This is a highly active ingredient based on native keratin and an enriched bio-peptide complex. The molecular profile is customized for maximum tissue bioavailability, so the protein integrates into damaged areas of the epidermis and dermis and supports deep regeneration. By choosing MicBioKeratinMED-PLUS, you give your products a platform for personalized medicine and modern drug delivery.
+                </p>
+            </div>
+        </section>
+
+        <section class="prod-char-section">
+            <div class="container">
+                <h2 class="prod-section-title" data-i18n="char_title">KEY CHARACTERISTICS</h2>
+                <div class="prod-table-card">
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="plus_char_cat_label">Product Category</strong><span data-i18n="plus_char_cat_val">Biotechnology</span></div>
+                        <div class="prod-char-col"><strong data-i18n="plus_char_name_label">Product Name</strong><span>MicBioKeratinMED-PLUS</span></div>
+                    </div>
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="plus_char_purity_label">Purity</strong><span data-i18n="plus_char_purity_val">100% Native Keratin</span></div>
+                        <div class="prod-char-col"><strong data-i18n="plus_char_formula_label">Active Formula</strong><span data-i18n="plus_char_formula_val">Enriched Bio-Peptide Complex</span></div>
+                    </div>
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="plus_char_meth_label">Production Method</strong><span data-i18n="plus_char_meth_val">Advanced Biomaterial Extraction</span></div>
+                        <div class="prod-char-col"><strong data-i18n="plus_char_app_label">Medical Applications</strong><span data-i18n="plus_char_app_val">Dermatology, Trichology &amp; Podology</span></div>
+                    </div>
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="plus_char_bio_label">Biocompatibility</strong><span data-i18n="plus_char_bio_val">100% Hypoallergenic</span></div>
+                        <div class="prod-char-col"><strong data-i18n="plus_char_supply_label">Supply Format</strong><span data-i18n="plus_char_supply_val">Active Ingredient</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prod-cta-section">
+            <div class="container text-center">
+                <h2 data-i18n="plus_cta_title">Interested in MicBioKeratinMED-PLUS?</h2>
+                <p data-i18n="plus_cta_desc">Contact our team to discuss your project or request a product sample.</p>
+                <div class="prod-buttons center-buttons">
+                    <a href="partner.html" class="btn btn-secondary" data-i18n="btn_contact">Contact Our Team</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

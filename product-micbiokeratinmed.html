@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicBioKeratinMED — MicBioMate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="mypictures/logo.png" alt="MicBioMate Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="index.html#product" class="nav-link" data-i18n="nav_product">Product</a>
+                <a href="index.html#tech" class="nav-link" data-i18n="nav_tech">Technology</a>
+                <a href="mailto:info@micbiomate.com" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+            <div class="header-right">
+                <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">
+                        <span class="current-lang" id="currentLang">EN</span>
+                        <span class="lang-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <button type="button" class="lang-option" data-lang="en">
+                            <span class="lang-flag lang-flag-en" aria-hidden="true"></span>
+                            <span class="lang-name">English</span>
+                        </button>
+                        <button type="button" class="lang-option" data-lang="de">
+                            <span class="lang-flag lang-flag-de" aria-hidden="true"></span>
+                            <span class="lang-name">German</span>
+                        </button>
+                        <button type="button" class="lang-option" data-lang="it">
+                            <span class="lang-flag lang-flag-it" aria-hidden="true"></span>
+                            <span class="lang-name">Italian</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page-main">
+        
+        <!-- Hero Section -->
+        <section class="prod-hero-section">
+            <div class="container prod-hero-container">
+                <div class="prod-hero-content">
+                    <span class="prod-badge" data-i18n="med_hero_tag">THIRD-GENERATION KERATIN</span>
+                    <h1 class="prod-title">MicBioKeratinMED</h1>
+                    <h3 class="prod-subtitle" data-i18n="med_hero_sub">FOR MEDICAL DEVICES</h3>
+                    <p class="prod-description" data-i18n="med_hero_desc">
+                        Highly purified keratin for wound dressings, medical materials, and other biomedical applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="partner.html" class="btn btn-secondary" data-i18n="btn_contact_us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="prod-hero-image">
+                    <img src="mypictures/image24.png" alt="MicBioKeratinMED Bottle" class="bottle-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. KEY ADVANTAGES -->
+        <section class="prod-advantages-section">
+            <div class="container">
+                <h3 class="prod-section-title" data-i18n="key_adv_title">KEY ADVANTAGES</h3>
+                <div class="prod-adv-grid">
+                    
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image41.png" alt="Pharmaceutical purity" class="card-icon-img">
+                        <h4 data-i18n="med_adv1_title">Pharmaceutical purity</h4>
+                        <p data-i18n="med_adv1_desc">High purity, allergen-free.</p>
+                    </div>
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image42.png" alt="Tissue regeneration" class="card-icon-img">
+                        <h4 data-i18n="med_adv2_title">Tissue regeneration</h4>
+                        <p data-i18n="med_adv2_desc">Accelerates healing and regeneration.</p>
+                    </div>
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image43.png" alt="High bioavailability" class="card-icon-img">
+                        <h4 data-i18n="med_adv3_title">High bioavailability</h4>
+                        <p data-i18n="med_adv3_desc">Deep penetration into the dermis.</p>
+                    </div>
+
+                    <div class="prod-adv-card">
+                        <img src="mypictures/image44.png" alt="Formula stability" class="card-icon-img">
+                        <h4 data-i18n="med_adv4_title">Formula stability</h4>
+                        <p data-i18n="med_adv4_desc">Stable under any conditions.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. FIELDS AND APPLICATIONS -->
+        <section class="prod-app-section">
+            <div class="container">
+                <h3 class="prod-section-title" data-i18n="fields_title">FIELDS AND APPLICATIONS</h3>
+                <div class="prod-app-grid">
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image29.png" alt="Therapeutic Ointments">
+                        </div>
+                        <h4 data-i18n="med_app1_title">ACTIVE INGREDIENT FOR THERAPEUTIC OINTMENTS AND CREAMS</h4>
+                        <p data-i18n="med_app1_desc">Raw material for products that accelerate the healing of skin micro-injuries and cracks.</p>
+                    </div>
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image30.png" alt="Peels and Injections">
+                        </div>
+                        <h4 data-i18n="med_app2_title">ACTIVE INGREDIENT FOR SOS PRODUCTS USED AFTER PEELS AND INJECTIONS</h4>
+                        <p data-i18n="med_app2_desc">Stimulates follicle nourishment and scalp recovery in cases of alopecia.</p>
+                    </div>
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image31.png" alt="Hair Loss Remedies">
+                        </div>
+                        <h4 data-i18n="med_app3_title">RAW MATERIALS FOR HAIR LOSS REMEDIES</h4>
+                        <p data-i18n="med_app3_desc">A hypoallergenic ingredient for lifting and strengthening the skin's protective barrier.</p>
+                    </div>
+
+                    <div class="prod-app-card">
+                        <div class="card-img-wrapper">
+                            <img src="mypictures/image32.png" alt="Nail Dystrophy">
+                        </div>
+                        <h4 data-i18n="med_app4_title">BASE FOR SERUMS FOR NAIL DYSTROPHY</h4>
+                        <p data-i18n="med_app4_desc">Bioavailable keratin for restoring the nail plate after fungal infections.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why MicBioKeratinMED Section -->
+        <section class="prod-why-section">
+            <div class="container text-center">
+                <h2 class="prod-why-title" data-i18n="med_why_title">Why MicBioKeratinMED</h2>
+                <p class="prod-why-text" data-i18n="med_why_desc">
+                    The answer lies in our medical-grade purification and precise molecular weight control. We obtain hydrolyzed keratin specifically tailored for maximum tissue bioavailability. It is a bio-compatible protein framework that targetedly integrates into damaged areas of the epidermis and dermis, accelerating cellular recovery. By choosing MediBioKeratin Med, you give your products a proven ability to repair and protect skin at the molecular level.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Characteristics -->
+        <section class="prod-char-section">
+            <div class="container">
+                <h2 class="prod-section-title" data-i18n="char_title">KEY CHARACTERISTICS</h2>
+                <div class="prod-table-card">
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="med_char_cat_label">Product Category</strong><span>Biotechnology</span></div>
+                        <div class="prod-char-col"><strong data-i18n="med_char_app_label">Medical Applications</strong><span>MicBioKeratinMED</span></div>
+                    </div>
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="med_char_purity_label">Purity</strong><span>100%</span></div>
+                        <div class="prod-char-col"><strong data-i18n="med_char_cust_label">Customization</strong><span>Customization</span></div>
+                    </div>
+                    <div class="prod-char-row">
+                        <div class="prod-char-col"><strong data-i18n="med_char_meth_label">Production Method</strong><span>Advanced Biomaterial Method</span></div>
+                        <div class="prod-char-col"><strong data-i18n="med_char_scal_label">Scalability</strong><span>No limits</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="prod-cta-section">
+            <div class="container text-center">
+                <h2 data-i18n="med_cta_title">Interested in MicBioKeratinMED?</h2>
+                <p data-i18n="med_cta_desc">Contact our team to discuss your project or request a product sample.</p>
+                <div class="prod-buttons center-buttons">
+                    <a href="partner.html" class="btn btn-secondary" data-i18n="btn_contact">Contact Our Team</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
