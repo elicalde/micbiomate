@@ -3539,6 +3539,36 @@ p, li, td, th {
   line-height: 1.7;
 }
 
+.mission-section {
+  padding: 72px 0;
+  background: #fff;
+  color: #15241b;
+}
+
+.mission-section .eyebrow {
+  color: #174e2d;
+}
+
+.mission-section h2 {
+  margin-bottom: 24px;
+  font-family: var(--font-hero);
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.15;
+}
+
+.mission-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 1080px;
+}
+
+.mission-copy p {
+  color: #526158;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
 .people-section {
   padding: 88px 0 96px;
   background: #f7faf8;
@@ -3724,7 +3754,8 @@ p, li, td, th {
   }
 
   .people-grid,
-  .contact-layout {
+  .contact-layout,
+  .mission-copy {
     grid-template-columns: 1fr;
   }
 
