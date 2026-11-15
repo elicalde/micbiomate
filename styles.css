@@ -3462,3 +3462,277 @@ p, li, td, th {
     font-size: clamp(28px, 8vw, 40px);
   }
 }
+
+/* Minimal company site */
+.minimal-site {
+  background: #071d11;
+}
+
+.minimal-container {
+  width: min(100% - 40px, 1120px);
+  margin: 0 auto;
+}
+
+.minimal-site .header-container {
+  justify-content: space-between;
+}
+
+.minimal-site .logo {
+  margin-right: 32px;
+}
+
+.minimal-site .nav-menu {
+  gap: 36px;
+}
+
+.minimal-site .burger-btn {
+  margin-left: auto;
+}
+
+.intro-section {
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  padding: 88px 0;
+  background: radial-gradient(ellipse at 82% 35%, rgba(80, 145, 98, 0.3), transparent 42%), #071d11;
+}
+
+.intro-content {
+  min-width: 0;
+}
+
+.intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.minimal-site .intro-layout .hero-video-wrap {
+  grid-column: auto;
+  grid-row: auto;
+  align-self: center;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  color: #aeead0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro-section h1 {
+  max-width: 780px;
+  color: #fff;
+  font-family: var(--font-hero);
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.08;
+}
+
+.intro-description {
+  max-width: 720px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.7;
+}
+
+.people-section {
+  padding: 88px 0 96px;
+  background: #f7faf8;
+  color: #15241b;
+}
+
+.people-section h2,
+.contact-section h2 {
+  margin-bottom: 36px;
+  font-family: var(--font-hero);
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.15;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.person-card {
+  padding: 28px;
+  border: 1px solid #e0e9e3;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.person-avatar {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-card h3 {
+  margin-bottom: 10px;
+  color: #173a25;
+  font-size: 20px;
+}
+
+.person-card p,
+.advisory-team li {
+  color: #526158;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.advisory-team {
+  margin-top: 42px;
+}
+
+.advisory-team h3 {
+  margin-bottom: 14px;
+  color: #173a25;
+  font-size: 20px;
+}
+
+.advisory-team ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+  padding-left: 20px;
+}
+
+.contact-section {
+  padding: 88px 0;
+  background: #eaf0ec;
+  color: #15241b;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact-section h2 {
+  margin-bottom: 16px;
+}
+
+.contact-copy > p:not(.eyebrow) {
+  margin-bottom: 20px;
+  color: #526158;
+  line-height: 1.6;
+}
+
+.contact-copy > a,
+.site-footer a {
+  color: #174e2d;
+  font-weight: 600;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.contact-form label {
+  margin-top: 8px;
+  color: #263b2d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd8ce;
+  border-radius: 8px;
+  background: #fff;
+  color: #15241b;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus-visible {
+  outline: 3px solid rgba(38, 77, 53, 0.25);
+  outline-offset: 2px;
+}
+
+.contact-form button {
+  justify-self: start;
+  margin-top: 8px;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #174e2d;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background: #0f3a20;
+}
+
+.contact-note {
+  color: #5c6b61;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.site-footer {
+  padding: 28px 0;
+  background: #071d11;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #aeead0;
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    min-height: 0;
+    padding: 72px 0;
+  }
+
+  .intro-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .minimal-site .intro-layout .hero-video-wrap {
+    align-self: end;
+  }
+
+  .people-section,
+  .contact-section {
+    padding: 64px 0;
+  }
+
+  .people-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    gap: 32px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+}

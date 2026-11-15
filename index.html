@@ -3,566 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MicBioMate — Biobased Materials</title>
-
+    <meta name="description" content="Learn about MicBioMate, our team, and our work exploring microbial biosynthesis of keratin.">
+    <title>MicBioMate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="mypictures/favicon-96x96.png" type="image/png">
     <link rel="apple-touch-icon" href="mypictures/apple-touch-icon.png">
 </head>
-<body>
-
-    <!-- Header Navigation -->
+<body class="minimal-site">
     <header class="header">
-    <div class="container header-container">
-        <a href="index.html" class="logo">
-            <img src="mypictures/Logo.png" alt="MicBioMate Logo" class="logo-img">
-        </a>
-
-        <nav class="nav-menu" id="navMenu">
-            <a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a>
-            <a href="index.html#product" class="nav-link" data-i18n="nav_product">Product</a>
-            <a href="index.html#tech" class="nav-link" data-i18n="nav_tech">Technology</a>
-            <a href="mailto:info@micbiomate.com" class="nav-link" data-i18n="nav_contact">Contact</a>
-        </nav>
-
-        <div class="header-right">
-            <button class="burger-btn" id="burgerBtn" type="button" aria-label="Menu" aria-expanded="false">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="MicBioMate home">
+                <img src="mypictures/Logo.png" alt="MicBioMate" class="logo-img">
+            </a>
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="burger-btn" id="burgerBtn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
             </button>
-            <div class="lang-dropdown" id="langDropdown">
-                <button class="lang-btn" id="langBtn" type="button" aria-expanded="false">
-                    <span class="current-lang" id="currentLang">EN</span>
-                    <span class="lang-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="lang-menu" id="langMenu">
-                    <button type="button" class="lang-option" data-lang="en">
-                        <span class="lang-flag lang-flag-en" aria-hidden="true"></span>
-                        <span class="lang-name">English</span>
-                    </button>
-                    <button type="button" class="lang-option" data-lang="de">
-                        <span class="lang-flag lang-flag-de" aria-hidden="true"></span>
-                        <span class="lang-name">German</span>
-                    </button>
-                    <button type="button" class="lang-option" data-lang="it">
-                        <span class="lang-flag lang-flag-it" aria-hidden="true"></span>
-                        <span class="lang-name">Italian</span>
-                    </button>
-                </div>
-            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-    <!-- Hero Section (#home) -->
-    <section class="hero" id="home">
-        <div class="container hero-container">
-            <div class="hero-copy">
-                <div class="hero-tag" data-i18n="hero_tag">100% ANIMAL-FREE & INTACT</div>
-                <h1 class="hero-title" data-i18n="hero_title">Microbiological Biosynthesis of Intact Keratin</h1>
-                <p class="hero-description" data-i18n="hero_desc">
-                    A revolutionary alternative to animal-derived proteins for premium cosmetics and regenerative medicine.
-                </p>
-            </div>
-
-            <div class="hero-buttons">
-                <a href="tech.html" class="btn btn-primary" data-i18n="btn_tech">Learn about our technologies</a>
-                <a href="partner.html" class="btn btn-secondary" data-i18n="btn_partner">Become a MicBioMate partner</a>
-            </div>
-
-            <div class="hero-video-wrap">
-                <video class="hero-video" src="mypictures/video5.mp4" autoplay muted loop playsinline preload="auto"></video>
-            </div>
-        </div>
-
-        <div class="hero-molecule-container">
-            <img src="mypictures/molekula.png" alt="Keratin Structure" class="hero-molecule-img">
-        </div>
-    </section>
-
-    <!-- Technologies Section (#tech) -->
-    <section class="tech-section" id="tech">
-        <div class="container">
-            <div class="tech-header">
-                <div class="tech-title-wrap">
-                    <h2 class="tech-main-title">MicBioMate</h2>
-                </div>
-                <div class="tech-category-tag">
-                    <span>HEALTH TECH</span>
-                    <span>SUSTAINABILITY</span>
-                    <span>LIFE SCIENCES</span>
-                </div>
-            </div>
-
-            <p class="tech-subtitle" data-i18n="home_tech_sub">
-                MICBIOMATE IS A STARTUP THAT WILL PRODUCE HIGH-QUALITY THIRD GENERATION KERATINS.
-            </p>
-
-            <p class="tech-text" data-i18n="tech_desc_1">
-                Our core innovation lies in our ability to produce keratins that are entirely independent of animal resources (such as feathers, horns, and claws) and plant sources. This offers a customisable, scalable, and sustainable alternative to traditional methods.
-            </p>
-
-            <p class="tech-text" data-i18n="tech_desc_2">
-                Our mission is to revolutionise the cosmetic and biomedical industries by replacing animal-derived keratin and plant-based analogous proteins with our biotechnologically produced, vegan, and tailored keratins.
-            </p>
-
-            <h3 class="product-lines-title" data-i18n="prod_title">Our distinct product lines include:</h3>
-
-            <ul class="product-lines-list">
-                <li>
-                    <strong>MicBioKeratin:</strong> <span data-i18n="pline1_desc">Designed for cosmetics, specifically for skin and hair care formulations.</span>
-                </li>
-                <li>
-                    <strong>MicBioKeratinMED:</strong> <span data-i18n="pline2_desc">Tailored for medical applications, including but not limited to advanced first-aid bandages and transdermal drug delivery systems.</span>
-                </li>
-                <li>
-                    <strong>MicBioKeratinMED-PLUS:</strong> <span data-i18n="pline3_desc">Our specialised platform for developing highly customisable, person-specific treatments, initially focusing on targeted drug delivery.</span>
-                </li>
-            </ul>
-
-            <div class="tech-table-wrapper">
-                <table class="tech-table">
-                    <thead>
-                        <tr>
-                            <th class="col-header" data-i18n="table_features">Features</th>
-                            <th>
-                                <ul>
-                                    <li>✓ &gt;75% purity</li>
-                                    <li>✓ Highly scalable</li>
-                                    <li>✓ Multiple applications</li>
-                                </ul>
-                            </th>
-                            <th>
-                                <ul>
-                                    <li>✓ &gt;90% purity</li>
-                                    <li>✓ Partial customization</li>
-                                </ul>
-                            </th>
-                            <th>
-                                <ul>
-                                    <li>✓ &gt;99.9% purity</li>
-                                    <li>✓ Priority support</li>
-                                    <li>✓ Full customization</li>
-                                </ul>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="row-header" data-i18n="table_usage">Usage</td>
-                            <td data-i18n="table_usage_1">Skin- and hair-care cosmetics</td>
-                            <td data-i18n="table_usage_2">Medical applications</td>
-                            <td data-i18n="table_usage_3">Person-specific treatments</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Cards Section (#product) -->
-    <section id="product" class="products-section">
-        <div class="container">
-            <div class="products-header">
-                <h2 class="products-title" data-i18n="products_title">OUR PRODUCTS</h2>
-                <p class="products-subtext" data-i18n="products_subtext">
-                    MicBioMate develops innovative keratins produced via biotechnology, without relying on animal or plant sources. Our solutions cater to the cosmetics industry, medical devices, and personalized medicine, combining high protein quality, production scalability, and a sustainable approach.
-                </p>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card">
-                    <h3 class="product-card-title">MicBioKeratin</h3>
-                    <span class="product-card-subtitle" data-i18n="pcard1_sub">SKIN AND HAIR CARE</span>
-                    <p class="product-card-desc" data-i18n="pcard1_desc">
-                        Third-generation biotechnological keratin for modern cosmetic formulas, featuring a preserved natural protein structure.
+    <main id="home">
+        <section class="intro-section" id="about">
+            <div class="minimal-container intro-layout">
+                <div class="intro-content">
+                    <p class="eyebrow">About MicBioMate</p>
+                    <h1>Microbiology and materials, brought together.</h1>
+                    <p class="intro-description">
+                        MicBioMate is an early-stage biotechnology initiative exploring the microbial biosynthesis of intact keratin. Our work focuses on animal-free materials and their potential applications in cosmetics and biomedical research.
                     </p>
-                    <a href="product-micbiokeratin.html" class="btn btn-primary" data-i18n="btn_read_more">Read more</a>
                 </div>
-
-                <div class="product-card">
-                    <h3 class="product-card-title">MicBioKeratinMED</h3>
-                    <span class="product-card-subtitle" data-i18n="pcard2_sub">FOR MEDICAL DEVICES</span>
-                    <p class="product-card-desc" data-i18n="pcard2_desc">
-                        Highly purified keratin for wound dressings, medical materials, and other biomedical applications.
-                    </p>
-                    <a href="product-micbiokeratinmed.html" class="btn btn-primary" data-i18n="btn_read_more">Read more</a>
-                </div>
-
-                <div class="product-card">
-                    <h3 class="product-card-title">MicBioKeratinMED-PLUS</h3>
-                    <span class="product-card-subtitle" data-i18n="pcard3_sub">FOR PERSONALIZED MEDICINE</span>
-                    <p class="product-card-desc" data-i18n="pcard3_desc">
-                        Customizable protein solutions for regenerative medicine and modern drug delivery systems.
-                    </p>
-                    <a href="product-micbiokeratinmed-plus.html" class="btn btn-primary" data-i18n="btn_read_more">Read more</a>
+                <div class="hero-video-wrap">
+                    <video class="hero-video" src="mypictures/video5.mp4" autoplay muted loop playsinline preload="auto"></video>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- The Team -->
-    <section class="team-section" id="team">
-        <div class="container">
-            <div class="team-frame">
-            <div class="team-header">
-                <h2 class="team-main-title" data-i18n="team_title">THE TEAM</h2>
-                <div class="team-logo-wrap">
-                    <img src="mypictures/Logo.png" alt="MicBioMate Logo" class="team-badge-logo">
+        <section class="people-section" id="team">
+            <div class="minimal-container">
+                <p class="eyebrow">The people behind MicBioMate</p>
+                <h2>Our team</h2>
+                <div class="people-grid">
+                    <article class="person-card">
+                        <img src="mypictures/image3.png" alt="" class="person-avatar">
+                        <h3>Dr. Giovanni D. Barone</h3>
+                        <p>Chief Executive Officer<br>Industrial Biotechnologist and Entrepreneur</p>
+                    </article>
+                    <article class="person-card">
+                        <img src="mypictures/image4.png" alt="" class="person-avatar">
+                        <h3>Dr. Elia Calderini</h3>
+                        <p>Chief Scientific Officer<br>Keratin Engineer</p>
+                    </article>
+                    <article class="person-card">
+                        <img src="mypictures/image5.png" alt="" class="person-avatar">
+                        <h3>Dott. Michele Mattei</h3>
+                        <p>Chief Financial Officer<br>Financial and Market Expert</p>
+                    </article>
+                </div>
+
+                <div class="advisory-team">
+                    <h3>Advisors</h3>
+                    <ul>
+                        <li><strong>Prof. Dr. Justyna Dabrowska</strong> — Business Expert</li>
+                        <li><strong>Prof. Dr. Karl Gruber</strong> — Biochemist</li>
+                        <li><strong>Prof. Dr. Harald Pichler</strong> — Molecular Biologist</li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-img-wrap">
-                        <img src="mypictures/image3.png" alt="Dr. Giovanni D. Barone" class="team-avatar">
-                    </div>
-                    <h3 class="team-member-name">DR. GIOVANNI D. BARONE</h3>
-                    <p class="team-member-role" data-i18n-html="team_role_1">Chief Executive Officer<br>Industrial Biotechnologist<br>Entrepreneur</p>
+        <section class="contact-section" id="contact">
+            <div class="minimal-container contact-layout">
+                <div class="contact-copy">
+                    <p class="eyebrow">Get in touch</p>
+                    <h2>Contact MicBioMate</h2>
+                    <p>Send us a message and we’ll be glad to hear from you.</p>
+                    <a href="mailto:info@micbiomate.com">info@micbiomate.com</a>
                 </div>
+                <form class="contact-form" action="mailto:info@micbiomate.com" method="post" enctype="text/plain">
+                    <input type="hidden" name="subject" value="Website inquiry">
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" name="name" type="text" autocomplete="name" required>
 
-                <div class="team-card">
-                    <div class="team-img-wrap">
-                        <img src="mypictures/image4.png" alt="Dr. Elia Coldesini" class="team-avatar">
-                    </div>
-                    <h3 class="team-member-name">DR. ELIA COLDERINI</h3>
-                    <p class="team-member-role" data-i18n="team_role_2">Chief Scientific Officer Keratin Engineer</p>
-                </div>
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" required>
 
-                <div class="team-card">
-                    <div class="team-img-wrap">
-                        <img src="mypictures/image5.png" alt="Dott. Michele Mattei" class="team-avatar">
-                    </div>
-                    <h3 class="team-member-name">DOTT. MICHELE MATTEI</h3>
-                    <p class="team-member-role" data-i18n="team_role_3">Chief Financial Officer Financial &amp; Market Expert</p>
-                </div>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Open email to send</button>
+                    <p class="contact-note">Your email app will open with your message ready. Review it and press Send to contact us.</p>
+                </form>
             </div>
+        </section>
+    </main>
 
-            <div class="advisory-section">
-                <h3 class="advisory-title" data-i18n="advisory_title">Advisory board</h3>
-                
-                <div class="advisory-grid">
-                    <div class="advisory-card advisory-card-1">
-                        <img src="mypictures/image6.png" alt="Prof. Dr. Justyna Dabrowska" class="advisory-avatar">
-                        <div class="advisory-info">
-                            <h4 class="advisory-name">PROF. DR. JUSTYNA DABROWSKA</h4>
-                            <p class="advisory-desc">Business Expert</p>
-                        </div>
-                        <img src="mypictures/image9.png" alt="Institution Logo" class="advisory-logo">
-                    </div>
-
-                    <div class="advisory-card advisory-card-2">
-                        <img src="mypictures/image7.png" alt="Prof. Dr. Karl Gruber" class="advisory-avatar">
-                        <div class="advisory-info">
-                            <h4 class="advisory-name">PROF. DR. KARL GRUBER</h4>
-                            <p class="advisory-desc">Biochemist</p>
-                        </div>
-                        <img src="mypictures/image10.png" alt="Institution Logo" class="advisory-logo">
-                    </div>
-
-                    <div class="advisory-card advisory-card-3">
-                        <img src="mypictures/image8.png" alt="Prof. Dr. Harald Pichler" class="advisory-avatar">
-                        <div class="advisory-info">
-                            <h4 class="advisory-name">PROF. DR. HARALD PICHLER</h4>
-                            <p class="advisory-desc">Molecular Biologist</p>
-                        </div>
-                        <img src="mypictures/image11.png" alt="Institution Logo" class="advisory-logo">
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-   <!-- 5. Frequently Asked Questions Section -->
-<section class="faq-section" id="faq">
-    <div class="container">
-        <h2 class="faq-main-title" data-i18n="faq_title">FREQUENTLY ASKED QUESTIONS</h2>
-        
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q1">WHAT IS KERATIN, AND WHY IS IT USED IN COSMETICS?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a1">Keratin is a fibrous protein that serves as the primary building block for hair, nails, and skin. It is used in cosmetic products to help restore damaged hair, improve skin elasticity, and protect the skin barrier.</p>
-                    <a href="https://www.google.com/search?q=WHAT+IS+KERATIN,+AND+WHY+IS+IT+USED+IN+COSMETICS?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q2">WHAT IS THE DIFFERENCE BETWEEN HYDROLYZED AND INTACT KERATIN?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a2">Hydrolyzed keratin is broken down into small fragments using chemical treatments to more easily fit onto external hair structures or surface skin; intact keratin maintains its native structure and structural protein integrity, providing a durable, profound priming protein layer for supreme product.</p>
-                    <a href="https://www.google.com/search?q=WHAT+IS+THE+DIFFERENCE+BETWEEN+HYDROLYZED+AND+INTACT+KERATIN?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q3">HOW DOES KERATIN HELP WITH SKIN REGENERATION?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a3">Intact keratin provides structural protein support and cell integrity, assisting in dermal repair and extracellular matrix formation. This protein helps with the extensive production of fine skin collagen and strengthening the protective skin barrier.</p>
-                    <a href="https://www.google.com/search?q=HOW+DOES+KERATIN+HELP+WITH+SKIN+REGENERATION?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q4">CAN KERATIN PRODUCTS BE USED ON SENSITIVE SKIN?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a4">Yes, pure third-generation keratin is exceptionally skin-compatible and allergen-free, making it safe for sensitive skin and inflammatory conditions like atopic dermatitis or eczema. Always patch-test before applying or consulting your physician for severe conditions.</p>
-                    <a href="https://www.google.com/search?q=CAN+KERATIN+PRODUCTS+BE+USED+ON+SENSITIVE+SKIN?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q5">DO KERATIN PRODUCTS HAVE SIDE EFFECTS?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a5">Pure third-generation keratin products are completely biocompatible and do not cause systemic side effects. Unlike animal-derived harsh chemical alternatives, bioengineered keratin preserves natural affinity to skin, minimizing irritation or structural damage and ensuring maximum safety.</p>
-                    <a href="https://www.google.com/search?q=DO+KERATIN+PRODUCTS+HAVE+SIDE+EFFECTS?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q6">IS THE PRODUCTION OF MICROBIAL KERATIN ECO-FRIENDLY?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a6">Yes, the production of microbial keratin is entirely cruelty-free, sustainable, and dramatically reduces water consumption, carbon footprints, and environmental waste compared to traditional animal farming.</p>
-                    <a href="https://www.google.com/search?q=IS+THE+PRODUCTION+OF+MICROBIAL+KERATIN+ECO-FRIENDLY?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q7">HOW DO YOU IDENTIFY HIGH-QUALITY KERATIN ON THE LABEL?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a7">Look for terms like "bio-engineered third-generation keratin", high purity percentages (>95%), and explicit avoidance of animal-derived feathers or claws. True high-quality keratin ensures preserved secondary and tertiary structural integrity for optimal functional performance.</p>
-                    <a href="https://www.google.com/search?q=HOW+DO+YOU+IDENTIFY+HIGH-QUALITY+KERATIN+ON+THE+LABEL?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q8">HOW CAN YOU SWITCH TO SUSTAINABLE HAIR CARE WITHOUT COMPROMISING PRODUCT EFFECTIVENESS?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a8">To switch to sustainable hair care without sacrificing performance, look for products using advanced eco-friendly bio-synthesized keratin that matches animal-derived standards. Always verify eco-certifications and check professional feedback on environmental performance before making the full switch.</p>
-                    <a href="https://www.google.com/search?q=HOW+CAN+YOU+SWITCH+TO+SUSTAINABLE+HAIR+CARE+WITHOUT+COMPROMISING+PRODUCT+EFFECTIVENESS?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q9">WHAT IS THE SPECIFIC BENEFIT OF USING BIOTECHNOLOGICAL PROTEINS IN DAILY MOISTURIZING CREAMS?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a9">Biotechnological proteins form a breathable molecular film over the skin surface that locks in moisture and instantly smooths out fine lines. Unlike large animal-derived molecules, these peptides are synthesized from bioengineered yeast, ensuring absolute purity and zero allergic reactions.</p>
-                    <a href="https://www.google.com/search?q=What+is+the+specific+benefit+of+using+biotechnological+proteins+in+daily+moisturizing+creams?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q10">WHICH INGREDIENTS SHOULD I LOOK FOR WHEN CARING FOR DAMAGED HAIR?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a10">Focus on intact, bio-synthesized keratin instead of heavy hydrolyzed alternatives, as it allows deep penetration into the hair cortex to rebuild internal fibers. Complement with natural lipids to heal the cuticle and provide lasting protection.</p>
-                    <a href="https://www.google.com/search?q=Which+ingredients+should+I+look+for+when+caring+for+damaged+hair?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                    <span data-i18n="faq_q11">IS BIOTECHNOLOGICAL KERATIN JUST AS EFFECTIVE?</span>
-                    <span class="faq-arrow" aria-hidden="true"><svg class="icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                </button>
-                <div class="faq-answer">
-                    <p data-i18n="faq_a11">Yes, biotechnological keratin is just as effective—and often more superior—to traditional animal-derived protein. Thanks to advanced synthetic biotechnology, its molecules perfectly replicate the structure of human hair, enabling it to penetrate deeper into damaged tissue and repair hair from within.</p>
-                    <a href="https://www.google.com/search?q=Is+biotechnological+keratin+just+as+effective?" target="_blank" class="btn btn-primary btn-faq" data-i18n="faq_google">Ask Google AI</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- 6. Reviews About Us Section -->
-    <section class="reviews-section" id="reviews">
-        <div class="container">
-            <h2 class="section-title" data-i18n="reviews_title">REVIEWS ABOUT US</h2>
-            
-            <div class="reviews-list" id="reviewsList">
-                <!-- Review 1 -->
-                <div class="review-item">
-                    <div class="review-header">
-                        <h3 class="reviewer-name">Dr. Chantal Mercier</h3>
-                        <div class="stars" data-rating="4">★★★★☆</div>
-                    </div>
-                    <p class="review-text" data-i18n="review_1_text">“Switching to MicBioMate’s vegan keratin was a game-changer for our premium hair repair line. Traditionally, sourcing high-purity cruelty-free keratin was a logistical nightmare. MicBioMate provided us with a batch of MicBioKeratin that perfectly matched human protein structures. Our lab tests showed a 34% increase in hair cuticle restoration compared to old animal-derived alternatives. The technical brochure (TDS) was incredibly detailed, and the sample kit arrived within 3 days.”</p>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="review-item">
-                    <div class="review-header">
-                        <h3 class="reviewer-name">Marcus Weber</h3>
-                        <div class="stars" data-rating="5">★★★★★</div>
-                    </div>
-                    <p class="review-text" data-i18n="review_2_text">“In medical device manufacturing, regulatory compliance is everything. We integrated MicBioKeratinMED into our new biocompatible wound-dressing matrices. MicBioMate’s quality standards are exceptional — zero endotoxins and full compliance with ISO requirements. Their team provided immaculate documentation that helped us pass our clinical audit ahead of schedule. Highly recommend their professional expert support.”</p>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="review-item">
-                    <div class="review-header">
-                        <h3 class="reviewer-name">Dr. Stefan Lang</h3>
-                        <div class="stars" data-rating="3">★★★☆☆</div>
-                    </div>
-                    <p class="review-text" data-i18n="review_3_text">“We utilize the MicBioKeratinMED-PLUS platform for our personalized regenerative medicine projects. What truly sets MicBioMate apart is their digital ecosystem. The BioIntegrate API platform allowed our team to seamlessly bridge our laboratory information systems (LIMS) via GraphQL. Automated data acquisition and real-time expression tracking saved us months of manual reporting. Their documentation is flawless.”</p>
-                </div>
-            </div>
-            <button type="button" class="reviews-more" id="reviewsMoreBtn" aria-expanded="false" data-i18n-aria="reviews_more" aria-label="Show more reviews">
-                <svg class="reviews-more-icon icon-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" aria-hidden="true">
-                    <path d="M1 1.2L6 5.8L11 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-    </section>
-    <!-- 7. Feedback Form Section -->
-    <section class="feedback-section" id="feedback">
-        <div class="container">
-            <h2 class="section-title" data-i18n="feedback_title">YOU CAN LEAVE YOUR FEEDBACK HERE.</h2>
-            
-            <form class="feedback-form" id="feedbackForm">
-                <div class="form-group">
-                    <label for="name" data-i18n="feedback_name">Name</label>
-                    <input type="text" id="name" name="name" required data-i18n-placeholder="feedback_name_ph" placeholder="/">
-                </div>
-
-                <div class="form-group">
-                    <label for="email" data-i18n="feedback_email">Email Address</label>
-                    <input type="email" id="email" name="email" required data-i18n-placeholder="feedback_email_ph" placeholder="Enter your email">
-                </div>
-
-                <div class="form-group">
-                    <label data-i18n="feedback_rating">Share your experience in scaling</label>
-                    <div class="star-rating" id="starRating">
-                        <span class="star" data-value="1">☆</span>
-                        <span class="star" data-value="2">☆</span>
-                        <span class="star" data-value="3">☆</span>
-                        <span class="star" data-value="4">☆</span>
-                        <span class="star" data-value="5">☆</span>
-                    </div>
-                    <input type="hidden" name="rating" id="ratingValue" value="0" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="comments" data-i18n="feedback_comments">Add your comments...</label>
-                    <textarea id="comments" name="comments" rows="6" required data-i18n-placeholder="feedback_comments_ph" placeholder="Add your comments..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-send" data-i18n="feedback_send">Send</button>
-            </form>
-        </div>
-    </section>
-    <section class="partners-section" id="partners">
-        <div class="container">
-            <h2 class="section-title" data-i18n="partners_title">OUR PARTNERS</h2>
-        </div>
-        <div class="partners-carousel" aria-label="Partners">
-            <div class="carousel-track">
-                <div class="carousel-group">
-                    <div class="partner-logo"><img src="mypictures/image52.png" alt="Science Park Graz"></div>
-                    <div class="partner-logo"><img src="mypictures/image53.png" alt="FFG"></div>
-                    <div class="partner-logo"><img src="mypictures/image54.png" alt="UNI GRAZ"></div>
-                    <div class="partner-logo"><img src="mypictures/image55.png" alt="TU Graz"></div>
-                </div>
-                <div class="carousel-group" aria-hidden="true">
-                    <div class="partner-logo"><img src="mypictures/image52.png" alt=""></div>
-                    <div class="partner-logo"><img src="mypictures/image53.png" alt=""></div>
-                    <div class="partner-logo"><img src="mypictures/image54.png" alt=""></div>
-                    <div class="partner-logo"><img src="mypictures/image55.png" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portal-section" id="contact">
-        <div class="container portal-container">
-            <div class="portal-text">
-                <div class="portal-text-top">
-                    <h4 class="portal-subtitle" data-i18n="portal_subtitle">MICBIOMATE PORTAL</h4>
-                    <h2 class="portal-title" data-i18n-html="portal_title"><span>LEARN MORE</span><span>ABOUT</span><span>OUR INNOVATIVE</span><span>SOLUTIONS.</span></h2>
-                </div>
-                <p class="portal-description" data-i18n="portal_desc">
-                    We are reimagining keratin production. Leave your details to discuss opportunities for integrating our technologies.
-                </p>
-            </div>
-
-            <form class="portal-form" action="mailto:info@micbiomate.com" method="post" enctype="text/plain">
-                <div class="form-row">
-                    <label for="fname" data-i18n="portal_name">Name*</label>
-                    <input type="text" id="fname" name="name" data-i18n-placeholder="portal_name_ph" placeholder="Name" required>
-                </div>
-                <div class="form-row">
-                    <label for="sname" data-i18n="portal_surname">Surname*</label>
-                    <input type="text" id="sname" name="surname" data-i18n-placeholder="portal_surname_ph" placeholder="Surname" required>
-                </div>
-                <div class="form-row">
-                    <label for="cemail" data-i18n="portal_email">Company email*</label>
-                    <input type="email" id="cemail" name="email" data-i18n-placeholder="portal_email_ph" placeholder="Company email" required>
-                </div>
-                <div class="form-row">
-                    <label for="goals" data-i18n="portal_goals">Goals and Objectives</label>
-                    <textarea id="goals" name="goals" data-i18n-placeholder="portal_goals_ph" placeholder="Briefly describe your goals."></textarea>
-                </div>
-                <button type="submit" class="btn-portal" data-i18n="portal_send">Send request</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-main">
-            <div class="footer-logo">
-                <img src="mypictures/image13png.png" alt="MicBioMate">
-            </div>
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p data-i18n-html="footer_info_1">MicBioMate:<br>Microbiological biotechnology for innovative materials.</p>
-                    <p data-i18n="footer_info_2">100% free from animal-derived ingredients, 100% intact keratin</p>
-                </div>
-                <div class="footer-subscribe">
-                    <div class="subscribe-card">
-                        <p data-i18n="footer_subscribe">Subscribe to the biotechnology digest MicBioMate.</p>
-                        <form action="#" method="post">
-                            <input type="email" data-i18n-placeholder="placeholder_email" placeholder="Corporate Email" required>
-                            <button type="submit" data-i18n="footer_sub_btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer_copy">© MicBioMate GmbH. All rights reserved. All information is property of MicBioMate GmbH.</p>
+    <footer class="site-footer">
+        <div class="minimal-container">
+            <a href="mailto:info@micbiomate.com">info@micbiomate.com</a>
         </div>
     </footer>
 
