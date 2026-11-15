@@ -7,4 +7,4 @@ The feedbacks are made up to test the webiste graphics
 
 One could check the webiste by going to
 
-https://htmlpreview.github.io/?https://github.com/TatianaZaichenko/MicBioMate/blob/main/index.html
+https://htmlpreview.github.io/?https://github.com/elicalde/micbiomate/blob/main/index.html
