@@ -729,6 +729,7 @@ const I18N = {
 
 document.addEventListener('DOMContentLoaded', () => {
   initLanguageSelector();
+  initContactForm();
   initMagicLinkAuth();
   initB2BFormHandlers();
   initFAQAccordion();
@@ -736,6 +737,32 @@ document.addEventListener('DOMContentLoaded', () => {
   initStarRating();
   initReviewForm();
 });
+
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const composeButton = form.querySelector('button[type="button"]');
+  if (!composeButton) return;
+
+  const composeEmail = () => {
+    if (!form.reportValidity()) return;
+
+    const formData = new FormData(form);
+    const subject = encodeURIComponent('Website inquiry');
+    const body = encodeURIComponent(
+      `Name: ${formData.get('name')}\r\nEmail: ${formData.get('email')}\r\n\r\n${formData.get('message')}`
+    );
+
+    window.location.href = `mailto:info@micbiomate.com?subject=${subject}&body=${body}`;
+  };
+
+  composeButton.addEventListener('click', composeEmail);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    composeEmail();
+  });
+}
 
 function getSavedLang() {
   const saved = localStorage.getItem(LANG_STORAGE_KEY);

@@ -88,7 +88,7 @@
                     <p>Send us a message and we’ll be glad to hear from you.</p>
                     <a href="mailto:info@micbiomate.com">info@micbiomate.com</a>
                 </div>
-                <form class="contact-form" action="mailto:info@micbiomate.com" method="post" enctype="text/plain">
+                <form class="contact-form" id="contactForm">
                     <input type="hidden" name="subject" value="Website inquiry">
                     <label for="contact-name">Name</label>
                     <input id="contact-name" name="name" type="text" autocomplete="name" required>
@@ -99,8 +99,8 @@
                     <label for="contact-message">Message</label>
                     <textarea id="contact-message" name="message" rows="5" required></textarea>
 
-                    <button type="submit">Open email to send</button>
-                    <p class="contact-note">Your email app will open with your message ready. Review it and press Send to contact us.</p>
+                    <button type="button">Open email to send</button>
+                    <p class="contact-note">Your details are not submitted to this website. Your email app will open with the message for you to review and send.</p>
                 </form>
             </div>
         </section>
